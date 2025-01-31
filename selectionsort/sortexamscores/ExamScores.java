@@ -33,7 +33,7 @@ public class ExamScores {
         System.out.println("Marks of student before sorting:");
         System.out.println(Arrays.toString(scores)); // Use Arrays.toString for better readability
 
-        // Call QuickSort to sort the prices
+        // Call selection sort to sort the scores
         selectionSort(scores);
 
         System.out.println("Prices after sorting:");
