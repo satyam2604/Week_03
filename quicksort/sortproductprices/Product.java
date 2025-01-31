@@ -28,7 +28,7 @@ public class Product {
             // Swap elements to place them in the correct partition
             if (start <= end) {
                 int temp = prices[start];
-                prices[start] = prices[end]; 
+                prices[start] = prices[end];
                 prices[end] = temp;
                 start++;
                 end--;
