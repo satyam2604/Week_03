@@ -16,7 +16,16 @@ public class StudentMarks {
                     swapped = true; // make it true after swapping
                 }
             }
-            if(!swapped)break; // break the loop if no element is swapped in previous pass
+            System.out.println("Marks Before sorting: ");
+            for(int x: marks){
+                System.out.print(x+" ");
+            }
+            System.out.println();
+            int result[] = bubblesort(marks);
+            System.out.println("Marks after sorting: ");
+            for(int x: result){
+                System.out.print(x+" ");
+            }        if(!swapped)break; // break the loop if no element is swapped in previous pass
         }
         return marks;
     }
@@ -24,15 +33,6 @@ public class StudentMarks {
     public static void main(String[] args) {
         // create an integer array where marks of students are stored
         int [] marks = {8,6,9,12,45,74,6,3,2,4,1,2};
-        System.out.println("Marks Before sorting: ");
-        for(int x: marks){
-            System.out.print(x+" ");
-        }
-        System.out.println();
-        int result[] = bubblesort(marks);
-        System.out.println("Marks after sorting: ");
-        for(int x: result){
-            System.out.print(x+" ");
-        }
+
     }
 }
